@@ -1,5 +1,4 @@
 name: CI & Docker Build
-#testing CI with github actions
 
 on:
   push:
