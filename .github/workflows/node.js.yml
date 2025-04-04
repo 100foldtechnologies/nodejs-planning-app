@@ -30,7 +30,7 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/docker-complete:latest .
+        run: docker build -t 100foldtechnologies/app:latest .
 
       - name: Push Docker image
-        run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/docker-complete:latest
+        run: docker push 100foldtechnologies/app:latest
